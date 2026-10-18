@@ -63,6 +63,8 @@ def main():
         except (OSError, RuntimeError) as error:
             print(f"ERROR: {error}")
             return 1
+
+    #closes socket. 
     clientSocket.close()
     return 0
 
